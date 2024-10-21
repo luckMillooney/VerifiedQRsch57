@@ -3,53 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="5;url=https://t.me/DmitryShtepo_57">
-    <title>Подтвержденный плакат</title>
+    <title>Art President School57</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div>Это страница главного qr-code, без плаката</div>
-<div id="text"></div>
-</body>
-<script>
-    let time = 5; // Задаём время обратного отсчёта
-    const timer = setInterval(() => {
-      const countdownElement = document.getElementById('text'); // Последим за элементом отсчёта
-      if(time > 0) {
-        countdownElement.textContent = `Перенаправление через ${time--}`;
-      } else {
-        clearInterval(timer); // Заканчиваем работу таймера
-        countdownElement.textContent = 'перенаправляем'; // Сообщение о старте загрузки
-      }
-    }, 1000);</script>
+<div class="title">Арт-объект агитации Президента Дмитрия Штепо</div>
+<div class="gallery">
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/1.html" target="_blank">
+        <img src="sourses/1.png" >
+    </a>
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/2.html" target="_blank">
+        <img src="sourses/2.png" >
+    </a>
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/3.html" target="_blank">
+        <img src="sourses/3.png" >
+    </a>
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/4.html" target="_blank">
+        <img src="sourses/4.png" >
+    </a>
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/5.html" target="_blank">
+        <img src="sourses/5.png" >
+    </a>
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/6.html" target="_blank">
+        <img src="sourses/6.png" >
+    </a>
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/7.html" target="_blank">
+        <img src="sourses/7.png" >
+    </a>
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/8.html" target="_blank">
+        <img src="sourses/8.png" >
+    </a>
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/9.html" target="_blank">
+        <img src="sourses/9.png" >
+    </a>
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/10.html" target="_blank">
+        <img src="sourses/10.png" >
+    </a>
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/11.html" target="_blank">
+        <img src="sourses/11.png" >
+    </a>
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/12.html" target="_blank">
+        <img src="sourses/12.png" >
+    </a>
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/13.html" target="_blank">
+        <img src="sourses/13.png" >
+    </a>
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/14.html" target="_blank">
+        <img src="sourses/14.png" >
+    </a>
+    <a href="https://luckmillooney.github.io/VerifiedQRsch57/Art/15.html" target="_blank">
+        <img src="sourses/15.png" >
+    </a>
+</div>
 <style>
+    /* Стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
 
-/* Общие стили для изображения */
-/* Общие стили для изображения */
-/* Для маленьких экранов (например, смартфоны) */
-@media only screen and (max-width: 767px) {
-    img {
-        width: 100%;
-        height: auto;
+/* Стили для галереи */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 изображений в ряд */
+    grid-gap: 10px; /* Промежутки между изображениями */
+    padding: 20px;
+    max-width: 1200px; /* Ограничиваем ширину страницы */
+    margin: 0 auto; /* Центрируем галерею на странице */
+}
+
+/* Стили для изображений */
+.gallery a {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Анимация при наведении */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+    cursor: pointer;
+}
+
+/* Для небольших экранов, например, планшетов */
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 изображения в ряд */
     }
 }
 
-/* Для планшетов */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    img {
-        width: 100%;
-        height: auto;
+/* Для мобильных устройств */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 изображения в ряд */
     }
 }
-
-/* Для настольных компьютеров и больших экранов */
-@media only screen and (min-width: 1025px) {
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+.title{
+    position: relative;
+    color: #B30310;
+    text-align: center;
+    font-size:x-large;
+    font-weight: 800;
 }
-
-
-    
 </style>
+</body>
 </html>
